@@ -11,7 +11,7 @@ def compare_numbers(number, user_guess): #faiqua fatima defined a function to pl
 
     return cows,bulls
 
-playing = True #gotta play the game
+playing = True  # gotta play the game
 number = str(random.randint(1000,9999)) #random 4 digit number #faiqua fatima changed 0 to 1000
 guesses = 0
 print(number) #faiqua fatima added () after print to contain number
