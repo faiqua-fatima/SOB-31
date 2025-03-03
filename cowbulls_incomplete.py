@@ -1,13 +1,20 @@
 import random
 
-def compare_numbers(number, user_guess):
-    ## your code here
-    return cowbull
+def compare_numbers(number, user_guess): #faiqua fatima defined a function to play the game
+    cows=0#faiqua fatima set initial conditions
+    bulls=0
+    for i in range(len(number)):#faiqua fatima added a for loop
+        if user_guess[i]==number[i]:#faiqua fatima added if condition
+            bulls+=1
+        elif user_guess[i] in number:#faiqua fatima added else condition
+            cows+=1
+
+    return cows,bulls
 
 playing = True #gotta play the game
-number = str(random.randint(0,9999)) #random 4 digit number
+number = str(random.randint(1000,9999)) #random 4 digit number #faiqua fatima changed 0 to 1000
 guesses = 0
-print number
+print(number) #faiqua fatima added () after print to contain number
 
 print("Let's play a game of Cowbull!") #explanation
 print("I will generate a number, and you have to guess the numbers one digit at a time.")
@@ -16,7 +23,7 @@ print("The game ends when you get 4 bulls!")
 print("Type exit at any prompt to exit.")
 
 while playing:
-    user_guess = raw_input("Give me your best guess!")
+    user_guess = input("Give me your best guess!")#faiqua fatima replaced raw input to input
     if user_guess == "exit":
         break
     cowbullcount = compare_numbers(number,user_guess)

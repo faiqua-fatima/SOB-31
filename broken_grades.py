@@ -20,37 +20,35 @@
 # Student iis failing.
 
 exam_one = int(input("Input exam grade one: "))
+exam_two = int(input("Input exam grade two: "))#Faiqua Fatima added int() and fixed paranthesis
+exam_three = int(input("Input exam grade three: "))#str->int by faiqua
 
-exam_two = input("Input exam grade two: "))
-
-exam_3 = str(input("Input exam grade three: "))
-
-grades = [exam_one exam_two exam_three]
+grades = [exam_one,exam_two,exam_three]# Faiqua Fatima added comas to seperate the items in list
 sum = 0
-for grade in grade:
+for grade in grades: #changed from "grade in grade" to "grade in grades" by Faiqua Fatima
   sum = sum + grade
 
-avg = sum / len(grdes)
+avg = sum / len(grades) #Faiqua Fatima changed "grdes" to "grades"
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90
+elif avg >= 80 and avg < 90:#Faiqua Fatima added ":"
     letter_grade = "B"
-elif avg > 69 and avg < 80:
-    letter_grade = "C'
-elif avg <= 69 and avg >= 65:
+elif avg >=70 and avg < 80:#Faiqua Fatima changed ">69" to ">=70"
+    letter_grade = "C" #"C' changed to "C" by Faiqua
+elif avg >= 60 and avg <70:#Faiqua Fatima changed "<= 69" to ">= 60" and ">= 65" to "<70"
     letter_grade = "D"
-elif:
+else: #elif changed to else by Faiqua Fatima
     letter_grade = "F"
 
-for grade in grades:
-    print("Exam: " + str(grade))
+for grade in grades: #"for grade in grade" changed to "for grade in grades" by Faiqua
+    print("Exam: " + str(grades))
 
     print("Average: " + str(avg))
 
     print("Grade: " + letter_grade)
 
-if letter-grade is "F":
-    print "Student is failing."
+if letter_grade =="F":#"letter-grade" changed to "letter_grade" by Faiqua, is replaced by ==
+    print ("Student is failing.")#Faiqua added paranthesis after print statement
 else:
-    print "Student is passing."
+    print ("Student is passing.")#Faiqua added paranthesis after print statement
