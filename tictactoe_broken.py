@@ -9,7 +9,7 @@ def draw_line(width, edge, filling):
 
 def display_winner(player):
     if player == 0:
-        print("Tie")
+        print("Tie!")
     else:
         print("Player " + str(player) + " wins!")
 
